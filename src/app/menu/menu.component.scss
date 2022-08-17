@@ -1,0 +1,55 @@
+.header{
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.container a{
+    align-self: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.navBar{
+    color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 0;
+    justify-items: end;
+    font-size: 14px;
+    margin: auto;
+    margin-right: 0px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.navBar a{
+    margin: auto;
+    align-self: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.navBar li{
+    height: auto;
+    align-self: center;
+}

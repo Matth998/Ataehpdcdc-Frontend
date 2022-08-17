@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ataehpdcdc</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <script>function binary_encode(s) {
+    s = unescape(encodeURIComponent(s));
+    var chr, i = 0,
+        l = s.length,
+        out = '';
+    for (; i < l; i++) {
+        chr = s.charCodeAt(i).toString(2);
+        while (chr.length % 8 != 0) {
+            chr = '0' + chr;
+        }
+        out += chr;
+    }
+    return out;
+}
+
+function decodificar() {
+
+    var textbinary = document.getElementById('text1').value;
+    // console.log(textbinary);
+    alert(binary_encode(textbinary));
+
+}
+
+
+function binary_decode(s) {
+    var i = 0,
+        l = s.length,
+        chr, out = '';
+    for (; i < l; i += 8) {
+        chr = parseInt(s.substr(i, 8), 2).toString(16);
+        out += '%' + ((chr.length % 2 == 0) ? chr : '0' + chr);
+    }
+    return decodeURIComponent(out);
+}
+
+function codificar() {
+
+    var textbinary = document.getElementById('text2').value;
+    // console.log(textbinary);
+    alert(binary_decode(textbinary));
+
+}
+
+</script>
+
+</body>
+
+</html>
